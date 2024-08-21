@@ -10,7 +10,7 @@ class CNPJ {
     if (numeros.length != 14) return cnpj;
 
     // Retornar CNPJ formatado
-    return "${numeros.substring(0, 2)}.${numeros.substring(2, 5)}.${numeros.substring(5, 8)}/${numeros.substring(8, 12)}-${numeros.substring(12)}";
+    return '${numeros.substring(0, 2)}.${numeros.substring(2, 5)}.${numeros.substring(5, 8)}/${numeros.substring(8, 12)}-${numeros.substring(12)}';
   }
 
   // Validar número de CNPJ
@@ -27,8 +27,7 @@ class CNPJ {
     if (RegExp(r'^(\d)\1*$').hasMatch(numeros)) return false;
 
     // Dividir dígitos
-    List<int> digitos =
-        numeros.split('').map((String d) => int.parse(d)).toList();
+    var digitos = numeros.split('').map((String d) => int.parse(d)).toList();
 
     // Calcular o primeiro dígito verificador
     var calcDv1 = 0;

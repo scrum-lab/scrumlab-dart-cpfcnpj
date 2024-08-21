@@ -1,4 +1,4 @@
-import 'package:scrumlab_cpfcnpj/scrumlab-cpfcnpj.dart';
+import 'package:scrumlab_cpfcnpj/scrumlab_cpfcnpj.dart';
 
 main() {
   // Validar CPF
