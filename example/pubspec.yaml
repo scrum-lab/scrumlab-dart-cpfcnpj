@@ -1,0 +1,21 @@
+name: scrumlab_cpfcnpj_example
+description: Demonstrates how to use the scrumlab-cpfcnpj
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  scrumlab_cpfcnpj:
+    path: ../
+
+dev_dependencies:    
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
